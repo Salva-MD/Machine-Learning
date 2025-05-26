@@ -1,0 +1,39 @@
+# 📊 Proyecto: Clasificación de Planes para Megaline
+
+## 📝 Descripción
+
+La compañía móvil **Megaline** desea actualizar su base de clientes, ya que muchos aún utilizan planes heredados. El objetivo de este proyecto es desarrollar un modelo de clasificación que analice el comportamiento de los clientes y recomiende uno de los dos nuevos planes prepago: **Smart** o **Ultra**.
+
+Se cuenta con datos de comportamiento de suscriptores que ya se han cambiado a estos nuevos planes. El reto es crear un modelo predictivo que seleccione correctamente el plan adecuado para cada cliente basándose en su historial de uso.
+
+## 🎯 Objetivo del Proyecto
+
+- Crear un modelo de clasificación con la mayor exactitud posible.
+- Cumplir un umbral mínimo de exactitud del **75%** (0.75).
+- Evaluar el rendimiento del modelo usando el dataset disponible.
+
+## 📦 Librerías utilizadas
+
+- `pandas` para manipulación y análisis de datos.
+- `sklearn.model_selection` para dividir los datos y realizar búsqueda de hiperparámetros.
+- `sklearn.ensemble.RandomForestClassifier` para construir el modelo principal.
+- `sklearn.tree.DecisionTreeClassifier` como modelo alternativo o comparativo.
+- `sklearn.metrics.accuracy_score` para evaluar la precisión del modelo.
+
+## 📂 Estructura del Proyecto
+
+1. Carga y exploración inicial de los datos.
+2. División del dataset en conjuntos de entrenamiento y prueba.
+3. Creación y ajuste de modelos de clasificación.
+4. Optimización de hiperparámetros con `GridSearchCV`.
+5. Evaluación de la precisión y selección del mejor modelo.
+6. Interpretación y conclusiones basadas en los resultados.
+
+## Instrucciones para ejecutar
+
+1. Clonar este repositorio.
+2. Instalar las dependencias con:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
