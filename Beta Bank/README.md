@@ -20,15 +20,7 @@ Este proyecto se desarrolla en Python y utiliza las siguientes librerías:
 2. numpy | Cálculo numérico eficiente |
 3. matplotlib.pyplot | Gráficos básicos visuales |
 4. seaborn | Visualización estadística avanzada |
-5. train_test_split | División de datos |
-6. GridSearchCV | Optimización de hiperparámetros |
-7. RandomForestClassifier | Clasificación con árboles |
-8. DecisionTreeClassifier | Árboles de decisión |
-9. LogisticRegression | Clasificación lineal binaria |
-10. accuracy_score | Evaluación de modelos |
-11. StandardScaler | Normalización de variables |
-12. SimpleImputer | Imputación de valores |
-13. shuffle | Aleatorización de datos |
+5. sklearn |Modelos y aprendizaje.|
 
 ## 🧠 Instrucciones para ejecutar
 

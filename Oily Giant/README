@@ -1,0 +1,58 @@
+# 📊 Predicción de Pozos Petroleros Óptimos – OilyGiant
+
+Este proyecto tiene como objetivo ayudar a la compañía **OilyGiant** a seleccionar estratégicamente **200 nuevos pozos petroleros** en la región más rentable, utilizando técnicas de **regresión lineal** y **análisis estadístico de riesgos** mediante **bootstrapping**.
+
+---
+
+## 🛠️ Descripción del Problema
+
+La empresa desea abrir 200 nuevos pozos en una de tres regiones candidatas. Se cuenta con datos sintéticos de exploración petrolera, incluyendo:
+
+- Calidad del crudo
+- Volumen de reservas (en miles de barriles)
+
+La tarea consiste en:
+
+1. Leer los archivos con parámetros recogidos en cada región.
+2. Entrenar un modelo de regresión lineal para predecir el volumen de reservas.
+3. Seleccionar los 200 pozos con mayor volumen estimado en cada región.
+4. Calcular el beneficio esperado.
+5. Evaluar los riesgos financieros mediante la técnica de bootstrapping.
+6. Elegir la región con el mayor beneficio promedio y riesgo de pérdidas menor al 2.5%.
+
+---
+
+## 💰 Condiciones Financieras
+
+- Se exploran **500 pozos por región**, seleccionando los **200 más prometedores**.
+- Presupuesto total de desarrollo: **100 millones de USD**.
+- Ingreso por unidad de producto (1000 barriles): **$4500**.
+- Costo por pozo: **$500,000**.
+
+---
+
+## 📈 Criterios de Selección
+
+Para elegir la región óptima:
+
+- El riesgo de pérdida (probabilidad de obtener beneficio negativo) debe ser **menor al 2.5%**.
+- Entre las regiones válidas, seleccionar la de **mayor beneficio promedio estimado**.
+
+---
+
+## 🧪 Técnicas Utilizadas
+
+- Regresión lineal (sin regularización)
+- Análisis exploratorio de datos (EDA)
+- Simulación de riesgos con **bootstrapping** (1000 iteraciones)
+- Visualización y evaluación de métricas
+
+---
+
+## 📦 Librerías utilizadas
+
+Este proyecto se desarrolla en Python y utiliza las siguientes librerías:
+
+1. pandas | Manipulación de datos |
+2. numpy | Cálculo numérico eficiente |
+3. Sklearn |Modelos y aprendizaje |

@@ -14,11 +14,8 @@ Se cuenta con datos de comportamiento de suscriptores que ya se han cambiado a e
 
 ## 📦 Librerías utilizadas
 
-- `pandas` para manipulación y análisis de datos.
-- `sklearn.model_selection` para dividir los datos y realizar búsqueda de hiperparámetros.
-- `sklearn.ensemble.RandomForestClassifier` para construir el modelo principal.
-- `sklearn.tree.DecisionTreeClassifier` como modelo alternativo o comparativo.
-- `sklearn.metrics.accuracy_score` para evaluar la precisión del modelo.
+- pandas |para manipulación y análisis de datos |
+- sklearn |Modelos y aprendizaje |
 
 ## 📂 Estructura del Proyecto
 
@@ -33,7 +30,4 @@ Se cuenta con datos de comportamiento de suscriptores que ya se han cambiado a e
 
 1. Clonar este repositorio.
 2. Instalar las dependencias con:
-
-   ```bash
    pip install -r requirements.txt
-   ```
