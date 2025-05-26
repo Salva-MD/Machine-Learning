@@ -1,0 +1,59 @@
+# Proyecto: Recuperación de Oro - Análisis y Modelado
+
+Este proyecto consiste en analizar y modelar un conjunto de datos sobre la recuperación de oro a partir de diferentes etapas de purificación. Los datos contienen características tanto para el conjunto de entrenamiento como para el conjunto de prueba, con algunas particularidades importantes a considerar.
+
+---
+
+## 📋 Descripción General
+
+- Algunos parámetros del conjunto de prueba **no están disponibles** porque se midieron o calcularon posteriormente.
+- El conjunto de prueba **no contiene objetivos** (variables dependientes).
+- El dataset completo incluye los conjuntos de entrenamiento y prueba con todas las características.
+- Se proveen datos en bruto sin procesar que fueron descargados directamente del almacén de datos.
+- Antes de construir modelos, se debe verificar la calidad y consistencia de los datos siguiendo las instrucciones.
+
+---
+
+## 🛠️ Instrucciones del Proyecto
+
+### 1. Preparación de Datos
+
+- **1.1** Abrir los archivos y examinar los datos.
+- **1.2** Verificar la precisión del cálculo de recuperación (`rougher.output.recovery`) usando el conjunto de entrenamiento. Calcular el error absoluto medio (EAM) entre el cálculo propio y la característica dada.
+- **1.3** Identificar qué características faltan en el conjunto de prueba y determinar sus tipos de datos.
+- **1.4** Realizar el preprocesamiento necesario para limpiar y preparar los datos.
+
+### 2. Análisis de Datos
+
+- **2.1** Analizar cómo varían las concentraciones de metales (Au, Ag, Pb) a través de las etapas de purificación.
+- **2.2** Comparar las distribuciones del tamaño de partículas de la alimentación en entrenamiento y prueba para detectar diferencias significativas que puedan afectar la evaluación del modelo.
+- **2.3** Evaluar las concentraciones totales de sustancias en las diferentes etapas (materia prima, concentrado rougher, concentrado final). Detectar y describir valores anómalos, considerar si deben eliminarse de ambas muestras, y proceder a su eliminación si procede.
+
+### 3. Construcción del Modelo
+
+- **3.1** Implementar una función para calcular el valor final de la métrica sMAPE.
+- **3.2** Entrenar diferentes modelos predictivos, evaluarlos mediante validación cruzada y seleccionar el mejor. Finalmente, probar el modelo seleccionado con el conjunto de prueba y presentar los resultados.
+
+---
+
+## 📦 Librerías utilizadas
+
+Este proyecto se desarrolla en Python y utiliza las siguientes librerías:
+
+1. pandas | Manipulación de datos |
+2. numpy | Cálculo numérico eficiente |
+3. Sklearn |Modelos y aprendizaje |
+4. matplotlib |Visualización de datos|
+
+---
+
+## 📌 Objetivos Finales
+
+- Garantizar la calidad y consistencia de los datos antes del modelado.
+- Entender el comportamiento de las variables a través de las etapas de purificación.
+- Construir un modelo robusto que prediga la recuperación de oro con buena precisión según la métrica sMAPE.
+- Documentar y justificar cada paso del análisis y modelado.
+
+---
+
+_Nota:_ El proyecto se basa en datos reales pero contiene particularidades que requieren un análisis cuidadoso antes de construir modelos predictivos confiables.
